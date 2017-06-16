@@ -12,22 +12,24 @@ songs[2] = "Another Brick in the Wall > by Pink Floyd on the album The Wall";
 songs[3] = "Welco(me to the Jungle > by Guns & Roses on the album Appetite for Destruction";
 songs[4] = "Ironi!c > by Alanis Moris*ette on the album Jagged Little Pill";
 
-songs.push("")
+songs.push("Alone - by Marshmello on the single Alone");
+songs.unshift("Twilight of the Thunder God - by Amon Amorth on the album Twilight of the Thunder God");
+
+let songLocation = document.getElementById("songsFound");
 
 for (var i = 0; i < songs.length; i++) {
 
     songs[i] = songs[i].replace(">", "-");
-    console.log(songs[i]);
 
-    let songToClean = songs[i].split(" ");
-    console.log(songToClean);
-    songs[i] = songToClean.split("").forEach(
-        function(character){
-            if (character != "-" && character != /^[a-z0-9]+$/i) {
-             songToClean.splice(songToClean.indexOf(character), 1);
-            }
-        }).join("");
+    let myRegEx = /[^\w\s-]/g;
 
-    console.log(songs[i]);
+    songs[i] = songs[i].replace(myRegEx, "")
 
+    let songNode = document.createTextNode(songs[i]);
+    let songElement = document.createElement("div");
+    songElement.className = "songInfo";
+
+    songElement.appendChild(songNode);
+    songLocation.appendChild(songElement);
 }
+
