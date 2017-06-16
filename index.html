@@ -1,0 +1,122 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Music History</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+        <nav id="navigationBar">
+            <span class="navElement">
+                View Music
+            </span>
+            <span class="navElement">
+                Add Music
+            </span>
+            <span class="navElement">
+                Profile
+            </span>
+        </nav>
+
+        <span class="musicInfo">
+
+        <div id="songFilter">
+            <form>
+                <div class="filterElement">
+                    Song length:<br>
+                    <input type="range" name="songLength">
+
+                </div>
+
+                <div class="filterElement">
+                    Artist:<br>
+                    <select>
+                        <option value="Amon Amarth" selected>Amon Amarth</option>
+                        <option value="Rise Against">Rise Against</option>
+                        <option value="Dropkick Murphys">Dropkick Murphys</option>
+                        <option value="Vanessa Carlton">Vanessa Carlton</option>
+                        <option value="Dos Gringos">Dos Gringos</option>
+                    </select>
+                </div>
+
+                <div class="filterElement">
+                    <br>Album:<br>
+                    <select>
+                        <option value="Twilight of the Thunder God" selected>Twilight of the Thunder God</option>
+                        <option value="Appeal to Reason">Appeal to Reason</option>
+                        <option value="Going Out In Style">Going Out In Style</option>
+                        <option value="Harmonium">Harmonium</option>
+                        <option value="Live at the Sand Trap">Live at the Sand Trap</option>
+                    </select><br>
+                </div>
+
+                <div class="filterElement genre">
+                    Genre:<br>
+                    <label><input type="checkbox" name="rock" value="rock">Rock</label>
+                    <label><input type="checkbox" name="classical" value="classical">Classical<br>
+                    <label><input type="checkbox" name="pop" value="pop">Pop
+                    <label><input type="checkbox" name="jazz" value="jazz">Jazz<br>
+                    <label><input type="checkbox" name="blues" value="blues">Blues
+                    <label><input type="checkbox" name="hiphop" value="hiphop">Hip Hop
+                </div>
+                <input type="submit" name="filter" value="Filter">
+            </form>
+        </div>
+
+        <div id="songsFound">
+            <!-- <div class="songInfo">
+                <p class="songName">Song Name</p>
+                <span class="songElement">
+                    Artist name
+                </span>
+                <span class="songElement">
+                    Album name
+                </span>
+                <span class="songElement">
+                    Genre
+                </span>
+            </div>
+            <div class="songInfo">
+                <p class="songName">Song Name</p>
+                <span class="songElement">
+                    Artist name
+                </span>
+                <span class="songElement">
+                    Album name
+                </span>
+                <span class="songElement">
+                    Genre
+                </span>
+            </div>
+            <div class="songInfo">
+                <p class="songName">Song Name</p>
+                <span class="songElement">
+                    Artist name
+                </span>
+                <span class="songElement">
+                    Album name
+                </span>
+                <span class="songElement">
+                    Genre
+                </span>
+            </div>
+            <div class="songInfo">
+                <p class="songName">Song Name</p>
+                <span class="songElement">
+                    Artist name
+                </span>
+                <span class="songElement">
+                    Album name
+                </span>
+                <span class="songElement">
+                    Genre
+                </span>
+            </div> -->
+        </div>
+        </span>
+
+        <script src = "main.js"></script>
+    </body>
+</html>

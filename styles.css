@@ -1,0 +1,53 @@
+#navigationBar {
+    margin: 3% 3% 1% 3%;
+    background-color: pink;
+    border: 3px solid black;
+    padding: 10px;
+}
+
+.navElement {
+    border-right: 2px solid black;
+    padding: 0 10px 0 10px;
+}
+
+.musicInfo {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#songFilter {
+    background-color: teal;
+    border: 3px solid black;
+    display: inline-block;
+    width: 25%;
+    margin-left: 3%;
+    padding: 0 10px 0 10px;
+}
+
+.filterElement {
+    overflow: hidden;
+    padding: 5px 5px 5px 5px;
+}
+
+#songsFound {
+    background-color: tan;
+    border: 3px solid black;
+    width: 60%;
+    margin-right: 3%;
+    text-align: left;
+    height: 350px;
+    padding: 0 10px 0 10px;
+}
+
+.songInfo {
+    padding: 5px 10px 5px 10px;
+}
+
+.songInfo > span + span {
+    border-left: 1px solid black;
+}
+
+.songInfo > span {
+    padding: 0px 10px 0px 10px;
+}
